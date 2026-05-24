@@ -4,6 +4,13 @@
 
 export type TemplateMode = "solo" | "duo" | "both";
 
+export interface SelectedTemplateTypes {
+  id: string;
+  name: string;
+  shotCount: number;
+  preview: string;
+}
+
 export interface Template {
   id: string;
   name: string;

@@ -1,7 +1,9 @@
 import React from "react";
 
-const layout = () => {
-  return <div>layout</div>;
-};
-
-export default layout;
+export default function BoothLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return <div className="min-h-full flex flex-col">{children}</div>;
+}
